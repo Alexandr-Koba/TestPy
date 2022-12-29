@@ -15,12 +15,26 @@ def umnoj(x, y):
     print(f'{x} * {y} = {c}')
     return c
 
+def delit(x, y):
+    c  = x // y
+    print(f'{x} // {y} = {c}')
+    return c
 
-user_input = input('Введите: сложение " + ", вычитание " - ", умножение " * ": ')
+def proc(x, y):
+    c  = x % y
+    print(f'{x} % {y} = {c}')
+    return c
+
+
+user_input = input('Введите: " + ", " - ", " * ", "//", "%" ')
 if user_input == '+':
     plus(int(input('цифра 1: ')), int(input('цифра 2: ')))
 if user_input == '-':
     minus(int(input('цифра 1: ')), int(input('цифра 2: ')))
 if user_input == '*':
     umnoj(int(input('цифра 1: ')), int(input('цифра 2: ')))
+if user_input == '//':
+    delit(int(input('цифра 1: ')), int(input('цифра 2: ')))
+if user_input == '%':
+    proc(int(input('цифра 1: ')), int(input('цифра 2: ')))
 
